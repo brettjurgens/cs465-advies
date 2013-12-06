@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ResultsActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shirt1"
+            android:src="@drawable/shirt1"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:baselineAlignBottom="true"
+            android:scaleType="fitEnd"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:alpha=".75" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shirt2"
+            android:src="@drawable/shirt2"
+            android:baselineAlignBottom="true"
+            android:layout_toRightOf="@+id/shirt1"
+            android:layout_alignTop="@+id/shirt1"
+            android:layout_alignBottom="@+id/shirt1"
+            android:alpha=".5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shirt3"
+            android:src="@drawable/shirt3"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/shirt2"
+            android:layout_below="@+id/shirt1"
+            android:alpha=".25" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shirt4"
+            android:src="@drawable/shirt4"
+            android:baselineAlignBottom="true"
+            android:layout_below="@+id/shirt1"
+            android:layout_toRightOf="@+id/shirt1"
+            android:alpha=".2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="50%"
+            android:id="@+id/textView2"
+            android:layout_above="@+id/shirt3"
+            android:layout_toLeftOf="@+id/shirt2"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="30%"
+            android:id="@+id/textView3"
+            android:layout_above="@+id/shirt4"
+            android:layout_toRightOf="@+id/shirt1"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="15%"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/shirt1"
+            android:layout_toLeftOf="@+id/shirt2"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="5%"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/shirt2"
+            android:layout_toRightOf="@+id/shirt1"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Which do you like best?"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
